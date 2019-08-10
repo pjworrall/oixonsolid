@@ -1,3 +1,21 @@
+# OIX Visualisation for the Trusted Environment Project
+
+## Introduction
+
+This is the OIX Trusted Environment Discovery projects visualisation prototype. It is using the freely available REACT SOLID SDK from <a href="https://www.inrupt.com">Inrupt</a>.
+
+The Trusted Environment project is working on an hypothesis that organisations with an existing relationship with someone can help those people prove who they are and what they are entitled to do by providing other organisations with proof of due diligence events that they have undertaken.
+  
+## SOLID
+
+The project is run under the direction of the <a target"_blank" href="https://www.openidentityexchange.org/">Open Identity Exchange</a> and is sponsored by <a target="_blank" href="https://www.gov.uk/government/organisations/government-digital-service">UK Gov GDS</a> and <a target="_blank" href="https://www.gov.uk/government/organisations/hm-revenue-customs">HMRC</a>. The working group includes <a target="_blank" href="https://www.hsbc.co.uk/">HSBC</a>, <a target="_blank" href="https://www.santander.co.uk/">Santander</a>, <a target="_blank" href="https://www.gov.uk/government/organisations/department-for-work-pensions">Department for Work and Pensions</a>, <a target="_blank" href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Services</a>, <a target="_blank" href="https://next.factern.com/">Factern</a>, <a target="_blank" href="https://www.idemia.com/">Idemia</a>, <a target="_blank" href="https://mydex.org/">Mydex CIC</a>, <a target="_blank" href="https://www.tscheme.org/">tScheme</a> and <a target="_blank" href="https://www.zonafide.net/">Zonafide</a>.  
+
+This is a prototype to explore how organisations might share Corroborating Events, such as Change of Residential Address event, using a personal data store of a customer. It is based on a SDK for use with a Social Linked Data (Solid) server. Solid is a <a target="_blank" href="https://github.com/solid/specification">W3C specification</a> for decentralized social applications based on Linked Data principles.
+
+Solid started as a project at <a target="_blank" href="https://solid.mit.edu/">MIT</a> led by Sir Tim Berners-Lee</a>.
+  
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
