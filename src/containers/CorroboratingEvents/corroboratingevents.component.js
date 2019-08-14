@@ -2,6 +2,7 @@ import React from 'react';
 import isLoading from '@hocs/isLoading';
 //import { Trans, withTranslation } from 'react-i18next';
 import { withTranslation } from 'react-i18next';
+
 import {
   CorroboratingEventsWrapper,
   CorroboratingEventsCard,
@@ -15,41 +16,32 @@ import { withToastManager } from 'react-toast-notifications';
  * @param props
  */
 const CorroboratingEventsPageContent = props => {
-    const { descriptions, toastManager } = props;
 
-    console.log("collaboratingEvents: " + descriptions);
-    console.log("toastManager : " + toastManager);
+    const { descriptions,  handleSubmit, handleChange, ce, toastManager }  =props;
 
   return (
     <CorroboratingEventsWrapper>
       <CorroboratingEventsCard className="card">
         <CorroboratingEventsDetail>
-          <p> This is the Corroborating Event (CE) page. This page will list all the CE you have received and enable you to control who can see them and how you share them.</p>
+            <h3>Corroborating Events</h3>
+          <p>This page will list all the Corroborating Events (CE) you have, enable you to save new ones and control who can see them.</p>
 
-            <h3>Goals of this page</h3>
-            <p>So, how do I? :</p>
+            <h5>These CE were found in your POD:</h5>
 
+            <p>Using react component accessing an array object..</p>
           <div>
-              <ul>
-                  <li>Read from the POD - DONE</li>
-                  <li>Write a set of triples to the POD</li>
-                  <li>Write a file into the POD</li>
-              </ul>
+              <table>
+                  {descriptions.map(description => <tr> <td key={description}>{description} </td></tr>)}
+              </table>
           </div>
 
-            <h3>Corroborating Events found POD</h3>
-
-          <div>
-              <ul>
-                  {descriptions.map(description => <li key={description}>{description}</li>)}
-              </ul>
-          </div>
-
+            <hr/>
+            <h5>Add a Corroborating Event (CE)</h5>
             <div>
-                <p>
-                Icons made by <a href="https://www.flaticon.com/authors/wanicon" title="wanicon">wanicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
-                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a>
-                </p>
+                <form onSubmit={handleSubmit}>
+                    <textarea value={ce} onChange={handleChange} />
+                    <input type="submit" value="Submit" />
+                </form>
             </div>
 
         </CorroboratingEventsDetail>

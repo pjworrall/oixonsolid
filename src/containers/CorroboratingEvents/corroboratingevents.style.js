@@ -85,23 +85,14 @@ export const CorroboratingEventsProfile = styled.div`
   `}
 `;
 
-export const ImageWrapper = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
+export const Button = styled.button`
+    max-width: 128px;
+    display: inline-block;
 
-button {
-  margin-left: 0px;
-}
-`
-
-export const ImageContainer =  styled.div`
-  background-image: ${({image}) => image ? `url(${image})`: '#cccccc'};
-  background-size: cover;
-  border-radius: 50%;
-  width: 128px;
-  height: 128px;
-  `;
+    &:first-child {
+        margin-right: 10px;
+    }
+`;
 
 export const CorroboratingEventsDetail = styled.div`
   padding: 1rem 3.5rem;
